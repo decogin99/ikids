@@ -97,7 +97,7 @@ const LandingPage = () => {
       {/* Features */}
       <section id="features" className="bg-[#14B0F2]/10">
         <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl sm:text-3xl font-bold">Why choose <span className='text-[#14B0F2]'>iKids</span>?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center">Why choose <span className='text-[#14B0F2]'>iKids</span>?</h2>
           <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition">
               <div className="font-semibold">Experienced Teachers</div>
@@ -118,21 +118,21 @@ const LandingPage = () => {
       {/* Parents Learn Together */}
       <section id="parents" className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl sm:text-3xl font-bold">Why Do Parents Need To Learn English With Their Children?</h2>
-          <div className="mt-6 grid md:grid-cols-3 gap-6">
-            {/* Stat */}
-            <div className="rounded-2xl bg-[#14B0F2]/10 p-6 border border-gray-100">
-              <div className="text-5xl font-extrabold text-[#14B0F2]">90%</div>
-              <div className="mt-2 text-sm sm:text-base text-gray-700">Young success</div>
-              <div className="mt-1 text-xs sm:text-sm text-gray-600">have positive support from the family according to international education research 2024</div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center">Why Do Parents Need to Accompany Their Children to Learn English?</h2>
+          <div className="mt-6">
+            <div className="mx-auto max-w-md">
+              <div className="rounded-2xl bg-[#14B0F2]/10 p-6 border border-gray-100 text-center">
+                <div className="text-5xl font-extrabold text-[#14B0F2]">90%</div>
+                <div className="mt-2 text-sm sm:text-base text-gray-700">Young Successful children</div>
+                <div className="mt-1 text-xs sm:text-sm text-gray-600">have positive support from the family according to international education research 2024</div>
+              </div>
             </div>
-            {/* Two columns of info */}
-            <div className="md:col-span-2 grid sm:grid-cols-2 gap-6">
-              <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition">
+            <div className="mt-8 grid sm:grid-cols-2 gap-6">
+              <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition text-left">
                 <div className="font-semibold">Important Role</div>
                 <p className="mt-2 text-sm text-gray-600">Parents are the most important companions to help children be confident, develop communication skills and effective language thinking.</p>
               </div>
-              <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition">
+              <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition text-left">
                 <div className="font-semibold">Modern Methods</div>
                 <p className="mt-2 text-sm text-gray-600">The workshop helps parents understand the method of learning modern English, suitable for Vietnamese children.</p>
               </div>
@@ -215,8 +215,47 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Experts */}
+      <section id="experts" className="bg-[#14B0F2]/10">
+        <div className="max-w-6xl mx-auto px-4 py-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center"><span className='text-[#14B0F2]'>iKids</span> Team of Experts - Your Trusted Companion</h2>
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
+              <img src={founderImg} alt="Ms. Thao Nguyen - Founder" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
+              <div className="px-5 pb-5">
+                <div className="mt-4">
+                  <div className="text-base font-semibold">Ms. Thao Nguyen</div>
+                  <div className="text-xs text-gray-500">Founder & Mentor</div>
+                </div>
+                <p className="mt-3 text-sm text-gray-600">Founder of the program "Parents and Children Learn English", inspiring thousands of Vietnamese families.</p>
+              </div>
+            </div>
+            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
+              <img src={teachersImg} alt="Native Teachers" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
+              <div className="px-5 pb-5">
+                <div className="mt-4">
+                  <div className="text-base font-semibold">Native Teachers</div>
+                  <div className="text-xs text-gray-500">International Teaching Team</div>
+                </div>
+                <p className="mt-3 text-sm text-gray-600">Native and Vietnamese teachers with over 5 years of professional experience teaching English to children.</p>
+              </div>
+            </div>
+            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
+              <img src={environmentImg} alt="Friendly Environment" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
+              <div className="px-5 pb-5">
+                <div className="mt-4">
+                  <div className="text-base font-semibold">Friendly Environment</div>
+                  <div className="text-xs text-gray-500">Child-Centered Learning</div>
+                </div>
+                <p className="mt-3 text-sm text-gray-600">Committed to creating a friendly, creative and comprehensive learning environment for children.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
-      <section id="contact" className="bg-[#14B0F2]/10">
+      <section id="contact" className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-14">
           <h2 className="text-2xl sm:text-3xl font-bold">Contact <span className='text-[#14B0F2]'>iKids</span></h2>
           <p className="mt-2 text-gray-600">Reach us via Zalo, Facebook, or our website for inquiries and enrollment.</p>
@@ -258,9 +297,9 @@ const LandingPage = () => {
       </section>
 
       {/* Benefits */}
-      <section id="benefits" className="bg-white">
+      <section id="benefits" className="bg-[#14B0F2]/10">
         <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl sm:text-3xl font-bold">Benefits Of Participating In The <span className='text-[#14B0F2]'>iKids</span> Seminar</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center">Benefits Of Participating In The <span className='text-[#14B0F2]'>iKids</span> Seminar</h2>
           <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition">
               <div className="font-semibold">Learning Secrets</div>
@@ -282,49 +321,10 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Experts */}
-      <section id="experts" className="bg-[#14B0F2]/10">
-        <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl sm:text-3xl font-bold"><span className='text-[#14B0F2]'>iKids</span> Team of Experts - Your Trusted Companion</h2>
-          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
-              <img src={founderImg} alt="Ms. Thao Nguyen - Founder" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
-              <div className="px-5 pb-5">
-                <div className="mt-4">
-                  <div className="text-base font-semibold">Ms. Thao Nguyen</div>
-                  <div className="text-xs text-gray-500">Founder & Mentor</div>
-                </div>
-                <p className="mt-3 text-sm text-gray-600">Founder of the program "Parents and Children Learn English", inspiring thousands of Vietnamese families.</p>
-              </div>
-            </div>
-            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
-              <img src={teachersImg} alt="Native Teachers" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
-              <div className="px-5 pb-5">
-                <div className="mt-4">
-                  <div className="text-base font-semibold">Native Teachers</div>
-                  <div className="text-xs text-gray-500">International Teaching Team</div>
-                </div>
-                <p className="mt-3 text-sm text-gray-600">Native and Vietnamese teachers with over 5 years of professional experience teaching English to children.</p>
-              </div>
-            </div>
-            <div className="rounded-2xl bg-white shadow-sm overflow-hidden hover:shadow-md transition">
-              <img src={environmentImg} alt="Friendly Environment" className="w-full h-48 md:h-64 object-cover rounded-t-xl" />
-              <div className="px-5 pb-5">
-                <div className="mt-4">
-                  <div className="text-base font-semibold">Friendly Environment</div>
-                  <div className="text-xs text-gray-500">Child-Centered Learning</div>
-                </div>
-                <p className="mt-3 text-sm text-gray-600">Committed to creating a friendly, creative and comprehensive learning environment for children.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Success Stories */}
       <section id="stories" className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-14">
-          <h2 className="text-2xl sm:text-3xl font-bold">Success Stories From <span className='text-[#14B0F2]'>iKids</span> Families</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center">Success Stories From <span className='text-[#14B0F2]'>iKids</span> Families</h2>
           <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="rounded-2xl bg-white p-5 border border-gray-100 shadow-sm hover:shadow-md transition">
               <div className="flex items-center gap-3">
@@ -372,7 +372,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
               <div className="rounded-2xl p-6 border border-[#14B0F2]/20 shadow-sm hover:shadow-md transition">
-                <h3 className="text-2xl sm:text-3xl font-bold">Let's Join <span className="text-[#14B0F2]">iKids</span>!</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-center">Let's Join <span className="text-[#14B0F2]">iKids</span>!</h3>
                 <div className="mt-5 space-y-5">
                   <div>
                     <div className="text-sm font-semibold text-[#14B0F2]">Precious Opportunity</div>
