@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files (do not commit secrets)
+.env
+.env.*
+# Vite local env (already covered by *.local, kept for clarity)
+.env.local

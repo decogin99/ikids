@@ -5,3 +5,16 @@ body {
   padding: 0;
   user-select: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+input{
+  border: 1px solid rgb(190, 190, 190);
+}
+
+input:focus {
+  outline: 1px solid #14B0F2;
+  border-color: #14B0F2;
+}

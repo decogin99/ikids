@@ -34,6 +34,7 @@ const LandingPage = () => {
           </nav>
           <div className="flex items-center gap-2">
             <a href="#contact" className="ml-2 hidden md:inline-flex items-center rounded-full bg-[#14B0F2] text-white px-4 py-2 text-sm font-semibold shadow-sm hover:bg-[#129EDB] focus:outline-none focus:ring-2 focus:ring-[#14B0F2]">Get in touch</a>
+            <a href="#select" className="ml-2 hidden md:inline-flex items-center rounded-full border border-[#14B0F2]/30 bg-white text-[#14B0F2] px-4 py-2 text-sm font-semibold hover:border-[#14B0F2] focus:outline-none focus:ring-2 focus:ring-[#14B0F2]">Admin Panel</a>
             <button
               type="button"
               aria-label="Toggle menu"
@@ -61,6 +62,13 @@ const LandingPage = () => {
                 className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[#14B0F2] text-white px-4 py-2 text-sm font-semibold shadow-sm hover:bg-[#129EDB]"
               >
                 Get in touch
+              </a>
+              <a
+                href="#select"
+                onClick={() => setMobileOpen(false)}
+                className="mt-2 inline-flex w-full items-center justify-center rounded-full border border-[#14B0F2]/30 bg-white text-[#14B0F2] px-4 py-2 text-sm font-semibold hover:border-[#14B0F2]"
+              >
+                Admin Panel
               </a>
             </div>
           </div>
@@ -399,6 +407,19 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Floating Language Toggle (display only) */}
+      <button
+        type="button"
+        aria-label="Change language (English/Vietnamese)"
+        className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#14B0F2] text-white px-4 py-3 shadow-lg hover:bg-[#129EDB] focus:outline-none focus:ring-2 focus:ring-[#14B0F2]"
+      >
+        {/* Globe/Language icon */}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-5 h-5">
+          <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" strokeWidth="1.5" />
+          <path d="M2 12h20M12 2c3 3 4.5 7 4.5 10s-1.5 7-4.5 10M12 2c-3 3-4.5 7-4.5 10s1.5 7 4.5 10" strokeWidth="1.5" />
+        </svg>
+        <span className="text-xs font-semibold">VI / EN</span>
+      </button>
       {/* Footer */}
       <footer className="border-t border-gray-100 bg-gradient-to-br from-indigo-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-500 flex flex-col md:flex-row items-center justify-between gap-4">
